@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpeedFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GOm-bU-8JY">
+                                <rect key="frame" x="0.0" y="126" width="414" height="770"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3n-dA-LNC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="16z-py-klQ"/>
+                                    <constraint firstAttribute="height" constant="80" id="ln3-7D-eRc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U3n-dA-LNC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3Yd-66-Ncw"/>
+                            <constraint firstItem="GOm-bU-8JY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="63" id="3ic-br-s5i"/>
+                            <constraint firstItem="U3n-dA-LNC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="42I-aP-c0q"/>
+                            <constraint firstItem="U3n-dA-LNC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C1O-34-SPa"/>
+                            <constraint firstItem="GOm-bU-8JY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nfb-F5-BcA"/>
+                            <constraint firstAttribute="bottom" secondItem="GOm-bU-8JY" secondAttribute="bottom" id="Qft-ea-Dxt"/>
+                            <constraint firstItem="U3n-dA-LNC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bBr-TD-sgh"/>
+                            <constraint firstItem="GOm-bU-8JY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pgu-S2-ubV"/>
+                            <constraint firstItem="GOm-bU-8JY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tqc-ox-WNV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="GOm-bU-8JY" id="eRM-ep-fJj"/>
+                        <outlet property="speedLabel" destination="U3n-dA-LNC" id="kJ8-Hs-Una"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560.86956521739137" y="98.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
